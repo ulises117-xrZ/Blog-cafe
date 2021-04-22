@@ -1,0 +1,227 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: ' Opens Sans', sans-serif;
+    --primario: #784D3C;
+    --Blanco:#fff;
+    --Negro:#000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size:62.5%; /*1 rem  = 10 px*/
+}
+
+*, *:before,*:after{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* globales */
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Blanco);
+    padding: 10px;
+}
+
+h1, h2, h3 ,h4{
+    font-size: 4.8rem;
+    font-family: var(--fuenteHeading);
+    font-weight: 800;
+}
+
+h1{
+    font-size: 4.8rem;
+    color: var(--Blanco);
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-family: var(--fuenteParrafos);
+}
+
+/* Utlilidades */
+
+.no_margin{
+    margin: 0;
+}
+
+.no_Padding{
+    padding: 0;
+}
+
+.centrado{
+    text-align: center;
+}
+.fondo{
+    background-image: url("../img/banner.jpg");
+    height: 60rem ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* header */
+.head{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.navegacion a{
+    font-size: 3rem;
+}
+
+.navegacion a:hover{
+    color: #784D3C;
+    background: rgba(255,255,255,.9);
+    border-radius: 5px;
+}
+@media (max-width:768px){
+    .head{
+        display: block;
+        text-align: center;
+        /* padding: 1rem; */
+    }
+
+    .fondo{
+        padding: 1rem;
+    }
+    .navegacion{
+        width: 100%;
+    }
+
+    .navegacion a {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:540px){
+    .navegacion{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .navegacion a{
+        font-size: 4rem;
+
+    }
+
+    .botoncin{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 280px){
+    .navegacion a{
+        font-size: 3rem;
+    }
+}
+/* banner principal */
+.fondo__div{
+    text-align: center;
+    color: var(--Blanco);
+    font-size: 6rem;
+
+}
+/* contenido principal */
+.main{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 2rem;
+    /* overflow: auto; */
+
+}
+
+.main__div{
+    margin-bottom: 40px;
+
+}
+
+.filtroSombra{
+    filter: drop-shadow(0 0 0.75rem rgb(102, 101, 101));
+}
+.main__segundo{
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.Boton{
+    border: none;
+    padding: 15px;
+    background: var(--primario);
+    color: var(--Blanco);
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+    font-weight: 400;
+}
+
+.logo{
+    font-family: var(--fuenteHeading);
+    font-weight: normal;
+    margin: 0;
+}
+
+.logo__negrita{
+    font-family: var(--fuenteHeading);
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width:768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.botoncin{
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+.pie{
+    background: #000;
+    position: relative;
+    bottom: 0;
+}
+
+.navegacions{
+    margin: 0;
+}
+
+.pie__div a h1{
+    margin: 0;
+}
